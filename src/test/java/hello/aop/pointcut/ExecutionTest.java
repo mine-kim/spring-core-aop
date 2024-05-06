@@ -147,7 +147,7 @@ public class ExecutionTest {
     //정확히 하나의 파라미터 허용, 모든 타입 허용
     @Test
     void argsMatchStar() {
-        pointcut.setExpression("execution(* *(*))");
+        pointcut.setExpression("");
         Assertions.assertThat(pointcut.matches(helloMethod, MemberServiceImpl.class)).isTrue();
     }
 
